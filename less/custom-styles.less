@@ -1,0 +1,173 @@
+
+// Login layout
+.login-body {
+  background-color: @login-bg;
+  padding-top: 100px;
+}
+
+.back-gray {
+  background-color: @login-bg;
+  color: white;
+}
+.back-primary {
+  background-color: @brand-primary;
+  color: white;
+}
+.back-white {
+  background-color: white;
+  color: @text-color;
+}
+
+.generic-background {
+  background: url('../images/wall_1.jpg') center top no-repeat fixed #000;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.box-shadow {
+  .box-shadow(5px 5px 10px -2px rgba(0,0,0,0.5));
+}
+
+.icon-grey {
+  color: @gray;
+}
+.icon-white {
+  color: white;
+}
+
+.center-y{
+  vertical-align:middle;
+}
+
+// COLUMS SAME HEIGHT
+[class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.same-height-container{
+  overflow: hidden;
+}
+
+
+// --INPUTS
+.left-inner-addon {
+  position: relative;
+}
+.left-inner-addon input {
+  padding-left: 30px;
+}
+.left-inner-addon i {
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+
+.right-inner-addon {
+  position: relative;
+}
+.right-inner-addon input {
+  padding-right: 30px;
+}
+.right-inner-addon i {
+  position: absolute;
+  right: 0px;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+
+.left-inner-addon-lg {
+  position: relative;
+}
+.left-inner-addon-lg input {
+  padding-left: 40px;
+}
+.left-inner-addon-lg i {
+  position: absolute;
+  padding: 10px 10px;
+  pointer-events: none;
+}
+
+.right-inner-addon-lg {
+  position: relative;
+}
+.right-inner-addon-lg input {
+  padding-right: 30px;
+}
+.right-inner-addon-lg i {
+  position: absolute;
+  right: 0px;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+
+// SPACES
+
+.spacer5 { height: 5px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer10 { height: 10px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer15 { height: 15px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer20 { height: 20px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer25 { height: 25px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer30 { height: 30px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer35 { height: 35px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer40 { height: 40px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer45 { height: 45px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer50 { height: 50px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer100 { height: 100px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer200 { height: 200px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+
+// CUSTOM SIDEBAR LEFT
+
+.sidebar .nav-stacked {
+  > li
+  {
+    > a {
+      color: @gray-lighter;
+      &:hover {
+        background-color: lighten(@login-bg, 10%);
+      }
+      > span.badge {
+        background-color: @brand-primary;
+        color: @gray-lighter;
+      }
+    }
+    &.active a, &.open > a:first-child {
+      background-color: lighten(@login-bg, 10%);
+    }
+  }
+}
+
+// CUSTOM TOP BAR
+
+.top-bar {
+  &.nav-pills > li + li {
+    margin-left: 0;
+  }
+  li {
+    > a {
+      color: @gray-lighter;
+      border-right: 1px solid lighten(@brand-primary, 5%);
+      &:hover {
+        background-color: lighten(@brand-primary, 5%);
+      }
+      > span.badge {
+        background-color: transparent;
+        border: 1px solid @gray-lighter;
+      }
+    }
+    &.active > a, &.active > a:hover, &.open > a:first-child {
+      background-color: lighten(@brand-primary, 5%);
+    }
+    &.pull-right a {
+      border-right: 0;
+      border-left: 1px solid lighten(@brand-primary, 5%);
+    }
+    > ul.dropdown-menu > li > a {
+      color: @text-color;
+      border: 0;
+      &:hover {
+        color: @gray-lighter;
+      }
+    }
+  }
+}
